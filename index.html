@@ -1,29 +1,215 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Historic QCrypt conference site archive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Past QCrypt Conferences</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <style type="text/css">
+    /* Self-contained page — no shared QCrypt theme exists, so the chrome and the
+       table styling are both defined here. The table mirrors the qip.iaqi.org
+       past-conferences page (same blue identity). */
+    body {
+      margin:0; background:#fff; color:#222;
+      font-family:'Titillium Web', 'Titillium Maps', Arial, sans-serif;
+      font-size:16px; line-height:1.55;
+    }
+    .qc-wrap { max-width:900px; margin:0 auto; padding:40px 20px 64px; }
+    .qc-wrap h1 {
+      text-align:center; color:#555; font-weight:700; font-size:27px;
+      margin:0 0 4px; letter-spacing:.01em;
+    }
+    .qc-eyebrow {
+      text-align:center; color:#6B8FB2; font-size:12px; font-weight:700;
+      text-transform:uppercase; letter-spacing:.12em; margin:0 0 22px;
+    }
+    .qip-intro {
+      color:#555; font-size:14px; line-height:1.5; margin:0 auto 18px; max-width:48em; text-align:center;
+    }
+    .qip-past-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    table.qip-past {
+      border-collapse:collapse; width:100%; margin:0; font-size:14.5px; line-height:1.4;
+    }
+    table.qip-past caption {
+      position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;
+    }
+    table.qip-past thead th {
+      background:#0d4c89; color:#fff; text-align:left;
+      font-family:'Titillium Web', 'Titillium Maps', Arial, sans-serif; font-weight:600;
+      font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+      padding:9px 12px; border:0; white-space:nowrap;
+    }
+    table.qip-past tbody th,
+    table.qip-past tbody td {
+      padding:8px 12px; border-bottom:1px solid #e2e6ec; vertical-align:top; text-align:left;
+    }
+    table.qip-past tbody tr:nth-child(even) { background:#f6f8fb; }
+    table.qip-past tbody tr:hover { background:#eef3fb; }
+    .qp-ed { white-space:nowrap; font-weight:400; }
+    .qp-flag { font-size:18px; margin-right:7px; vertical-align:-1px; }
+    .qp-name { font-weight:700; color:#222; }
+    .qp-loc { color:#444; }
+    .qip-past a {
+      color:#095197; font-weight:600; text-decoration:none;
+      border-bottom:1px solid rgba(9,81,151,.28);
+    }
+    .qip-past a:hover, .qip-past a:focus { border-bottom-color:#095197; }
+    .qp-tag {
+      display:inline-block; margin-left:6px; font-size:10px; font-weight:700;
+      text-transform:uppercase; letter-spacing:.04em; color:#6B8FB2;
+      border:1px solid #cdd8e6; border-radius:3px; padding:1px 5px; vertical-align:1px;
+    }
+    .qp-copy { white-space:nowrap; }
+    .qp-none { color:#b3b3b3; }
+    .qc-note {
+      color:#555; font-size:13.5px; margin:18px 2px 0;
+    }
+    .qc-note a { color:#095197; font-weight:600; }
+    .qc-footer {
+      margin-top:40px; padding-top:16px; border-top:1px solid #e2e6ec;
+      color:#888; font-size:12.5px; text-align:center;
+    }
+    .qc-footer a { color:#6B8FB2; }
+    @media (max-width:560px){
+      table.qip-past { font-size:13px; }
+      table.qip-past thead th,
+      table.qip-past tbody th,
+      table.qip-past tbody td { padding:7px 8px; }
+      .qp-flag { font-size:15px; margin-right:5px; }
+    }
+  </style>
 </head>
 
 <body>
-<h1>Historic QCrypt conference websites</h1>
-The following are static archive copies of old QCrypt conference websites, hosted on <a href="https://github.com/QCrypt/qcrypt.github.io" target="_blank">github</a>:
-<ul>
-    <li><a href="2011/index.html">2011</a></li>
-    <li><a href="2012/index.html">2012</a></li>
-    <li><a href="2013/index.html">2013</a></li>
-    <li><a href="2014/index.html">2014</a></li>
-    <li><a href="2015/index.html">2015</a></li>
-    <li><a href="2016/index.html">2016</a></li>
-    <li><a href="2017/index.html">2017</a></li>
-    <li><a href="2018/index.html">2018</a></li>
-    <li><a href="2019/index.html">2019</a></li>
-    <li><a href="2020/index.html">2020</a></li>
-    <li><a href="2021/index.html">2021</a></li>
-    <li><a href="2022/index.html">2022</a></li>
-    <li><a href="2023/index.html">2023</a></li>
-    <li><a href="2024/index.html">2024</a></li>
-    <li><a href="qcrypt.net/index.html">2023+</a> (new version)</li>
-</ul>
-</body>
+  <div class="qc-wrap">
 
+    <h1>Past Editions of QCrypt</h1>
+    <p class="qc-eyebrow">International Conference on Quantum Cryptography</p>
+
+    <p class="qip-intro">Every QCrypt edition since 2011. Each links to the organisers&rsquo; original website &mdash; or a Web&nbsp;Archive snapshot when that site has gone offline &mdash; alongside the static copy mirrored here on IAQI.</p>
+
+    <div class="qip-past-wrap">
+    <table class="qip-past">
+      <caption>Past editions of the QCrypt conference, with links to the original conference website and to the local IAQI static copy.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Edition</th>
+          <th scope="col">Location</th>
+          <th scope="col">Host</th>
+          <th scope="col">Original website</th>
+          <th scope="col">IAQI copy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2011</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127464;&#127469;</span>Zurich, Switzerland</td>
+          <td class="qp-host">ETH Zurich</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20160506121753/http://www.qcrypt2011.ethz.ch/" target="_blank" rel="noopener">qcrypt2011.ethz.ch</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2011/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2012</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127480;&#127468;</span>Singapore</td>
+          <td class="qp-host">CQT, NUS</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20130526082917/http://2012.qcrypt.net/" target="_blank" rel="noopener">2012.qcrypt.net</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2012/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2013</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127464;&#127462;</span>Waterloo, Canada</td>
+          <td class="qp-host">IQC, U Waterloo</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20190502182503/http://2013.qcrypt.net/" target="_blank" rel="noopener">2013.qcrypt.net</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2013/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2014</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127467;&#127479;</span>Paris, France</td>
+          <td class="qp-host">Télécom ParisTech</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20190514105844/http://2014.qcrypt.net/" target="_blank" rel="noopener">2014.qcrypt.net</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2014/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2015</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127471;&#127477;</span>Tokyo, Japan</td>
+          <td class="qp-host">NICT &amp; NII</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20190325064154/http://2015.qcrypt.net/" target="_blank" rel="noopener">2015.qcrypt.net</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2015/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2016</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127482;&#127480;</span>Washington, DC, USA</td>
+          <td class="qp-host">QuICS, U Maryland</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20250520200805/http://2016.qcrypt.net/" target="_blank" rel="noopener">2016.qcrypt.net</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2016/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2017</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127468;&#127463;</span>Cambridge, UK</td>
+          <td class="qp-host">University of Cambridge</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20250516011829/http://2017.qcrypt.net/" target="_blank" rel="noopener">2017.qcrypt.net</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2017/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2018</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127464;&#127475;</span>Shanghai, China</td>
+          <td class="qp-host">USTC</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20250514124833/http://2018.qcrypt.net/" target="_blank" rel="noopener">2018.qcrypt.net</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2018/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2019</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127464;&#127462;</span>Montreal, Canada</td>
+          <td class="qp-host">UdeM / McGill / UQAM</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20190921180905/http://2019.qcrypt.net/" target="_blank" rel="noopener">2019.qcrypt.net</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2019/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2020</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127475;&#127473;</span>Amsterdam, Netherlands [online]</td>
+          <td class="qp-host">QuSoft / U Amsterdam</td>
+          <td class="qp-orig"><a href="https://2020.qcrypt.net/" target="_blank" rel="noopener">2020.qcrypt.net</a></td>
+          <td class="qp-copy"><a href="/2020/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2021</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127475;&#127473;</span>Amsterdam, Netherlands [online]</td>
+          <td class="qp-host">QuSoft / U Amsterdam</td>
+          <td class="qp-orig"><a href="https://2021.qcrypt.net/" target="_blank" rel="noopener">2021.qcrypt.net</a></td>
+          <td class="qp-copy"><a href="/2021/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2022</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127481;&#127484;</span>Taipei, Taiwan</td>
+          <td class="qp-host">Academia Sinica</td>
+          <td class="qp-orig"><a href="https://2022.qcrypt.net/" target="_blank" rel="noopener">2022.qcrypt.net</a></td>
+          <td class="qp-copy"><a href="/2022/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2023</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127482;&#127480;</span>College Park, MD, USA</td>
+          <td class="qp-host">University of Maryland</td>
+          <td class="qp-orig"><a href="https://2023.qcrypt.net/" target="_blank" rel="noopener">2023.qcrypt.net</a></td>
+          <td class="qp-copy"><a href="/2023/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QCrypt 2024</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127466;&#127480;</span>Vigo, Spain</td>
+          <td class="qp-host">University of Vigo</td>
+          <td class="qp-orig"><a href="https://2024.qcrypt.net/" target="_blank" rel="noopener">2024.qcrypt.net</a></td>
+          <td class="qp-copy"><a href="/2024/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p class="qc-note">For the 2023 edition onward, the conference is also collected on the current QCrypt site at <a href="https://qcrypt.net/" target="_blank" rel="noopener">qcrypt.net</a>.</p>
+
+    <div class="qc-footer">
+      Static archive of past QCrypt conference websites, maintained by IAQI &mdash;
+      <a href="https://github.com/IAQI/qcrypt.iaqi.org" target="_blank" rel="noopener">source on GitHub</a>.
+    </div>
+
+  </div>
+</body>
 </html>
