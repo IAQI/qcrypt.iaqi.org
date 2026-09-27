@@ -56,6 +56,8 @@ jobs:
     steps:
       - name: Checkout pull request
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Deploy preview to gh-pages/pr-preview/pr-${{ github.event.number }}
         uses: peaceiris/actions-gh-pages@v4
@@ -147,4 +149,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -m "Remove PR preview for #${{ github.event.number }}"
+          git pull --rebase origin gh-pages
           git push origin gh-pages
