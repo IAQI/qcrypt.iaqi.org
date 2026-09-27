@@ -7,6 +7,7 @@ Archive of Historic QCrypt conference sites, hosted on github.
 
 - PR previews are published to `https://iaqi.github.io/qcrypt.iaqi.org/pr-preview/pr-<number>/` by `.github/workflows/pr-preview.yml`.
 - Preview directories are cleaned up automatically when the PR is closed.
+- For security, automatic preview deploys run only for PRs whose head branch is in this repository (fork PRs are skipped).
 - For previews to work, repository **Settings → Pages** must be set to **Deploy from a branch** with branch **`gh-pages`**. (The `gh-pages` branch does not currently exist in remote heads and will be created by the workflow on first deploy.)
 
 In order to retrieve sites, the command
