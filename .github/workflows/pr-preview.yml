@@ -23,14 +23,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Prepare production publish directory
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p /tmp/publish
+          rsync -a --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude 'pr-preview/' \
+            ./ /tmp/publish/
+
+          repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads "${repo_url}" gh-pages >/dev/null 2>&1; then
+            git clone --depth=1 --branch gh-pages "${repo_url}" /tmp/gh-pages
+            if [ -d /tmp/gh-pages/pr-preview ]; then
+              mkdir -p /tmp/publish/pr-preview
+              rsync -a /tmp/gh-pages/pr-preview/ /tmp/publish/pr-preview/
+            fi
+          fi
+
       - name: Deploy site root to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .
-          keep_files: true
-          exclude_assets: .github,pr-preview
+          publish_dir: /tmp/publish
 
   deploy-preview:
     if: github.event_name == 'pull_request' && github.event.action != 'closed'
@@ -93,8 +111,11 @@ jobs:
     steps:
       - name: Check for gh-pages branch
         id: gh_pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+          repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads "${repo_url}" gh-pages >/dev/null 2>&1; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
           else
             echo "exists=false" >> "$GITHUB_OUTPUT"
