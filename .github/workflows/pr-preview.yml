@@ -59,15 +59,23 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
+      - name: Prepare preview publish directory
+        run: |
+          mkdir -p /tmp/preview-publish
+          rsync -a --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude 'pr-preview/' \
+            ./ /tmp/preview-publish/
+
       - name: Deploy preview to gh-pages/pr-preview/pr-${{ github.event.number }}
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .
+          publish_dir: /tmp/preview-publish
           destination_dir: pr-preview/pr-${{ github.event.number }}
           keep_files: true
-          exclude_assets: .github,pr-preview
 
       - name: Post or update preview comment
         uses: actions/github-script@v7
