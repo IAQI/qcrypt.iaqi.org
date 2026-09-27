@@ -51,7 +51,7 @@ jobs:
           publish_dir: /tmp/publish
 
   deploy-preview:
-    if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    if: github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
       - name: Checkout pull request
@@ -126,6 +126,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: gh-pages
+          fetch-depth: 0
 
       - name: Remove preview directory
         if: steps.gh_pages.outputs.exists == 'true'
