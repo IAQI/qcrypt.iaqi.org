@@ -123,31 +123,28 @@ jobs:
             echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Checkout gh-pages
-        if: steps.gh_pages.outputs.exists == 'true'
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          fetch-depth: 0
-
-      - name: Remove preview directory
+      - name: Prepare cleanup directory
         if: steps.gh_pages.outputs.exists == 'true'
         id: remove_preview
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          repo_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git clone --depth=1 --branch gh-pages "${repo_url}" /tmp/gh-pages
+
           preview_dir="pr-preview/pr-${{ github.event.number }}"
-          if [ -d "$preview_dir" ]; then
-            rm -rf "$preview_dir"
+          if [ -d "/tmp/gh-pages/${preview_dir}" ]; then
+            rm -rf "/tmp/gh-pages/${preview_dir}"
+            rm -rf /tmp/gh-pages/.git
             echo "removed=true" >> "$GITHUB_OUTPUT"
           else
             echo "removed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit and push cleanup
+      - name: Deploy cleanup to gh-pages
         if: steps.gh_pages.outputs.exists == 'true' && steps.remove_preview.outputs.removed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "Remove PR preview for #${{ github.event.number }}"
-          git pull --rebase origin gh-pages
-          git push origin gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: /tmp/gh-pages
