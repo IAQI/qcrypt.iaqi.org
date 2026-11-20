@@ -3,14 +3,20 @@ QCrypt.iaqi.org
 
 Archive of Historic QCrypt conference sites, hosted on github.
 
-## Pull request previews
+## Archiving a year, robots.txt, sitemap.xml, llms.txt
 
-- PR previews are published to `https://iaqi.github.io/qcrypt.iaqi.org/pr-preview/pr-<number>/` by `.github/workflows/pr-preview.yml`.
-- Preview directories are cleaned up automatically when the PR is closed.
-- For security, automatic preview deploys run only for PRs whose head branch is in this repository (fork PRs are skipped).
-- For previews to work, repository **Settings → Pages** must be set to **Deploy from a branch** with branch **`gh-pages`**. (The `gh-pages` branch does not currently exist in remote heads and will be created by the workflow on first deploy.)
+Adding a year, and keeping `robots.txt`, `sitemap.xml`, `llms.txt` and the
+Event data of the year pages up to date, is done with two scripts of
+[IAQI/conference-theme](https://github.com/IAQI/conference-theme):
+`scripts/archive_year.py` and `scripts/archive_discovery.py`. The procedure and
+the reasons behind it are in the website guide,
+["Archiving a year"](https://github.com/IAQI/conference-theme/blob/main/docs/website-guide.md#archiving-a-year).
+Do not edit `robots.txt`, `sitemap.xml`, `llms.txt` or the
+`<!-- iaqi-archive:... -->` blocks by hand: run `archive_discovery.py` again.
 
-In order to retrieve sites, the command
+## Older recipes
+
+In order to retrieve the older sites, the command
 ```bash
 wget --mirror \
      --convert-links \

@@ -1,0 +1,180 @@
+# QCrypt archive
+
+> Static copies of the websites of past International Conference on Quantum Cryptography (QCrypt) conferences, 2011–2026, preserved by the International Association for Quantum Information (IAQI). Pages are archived as they were published; programs, accepted papers, abstracts and slides are mostly in HTML and PDF.
+
+The current conference is at https://qcrypt.net/. For structured, machine-readable data (talks, posters, authors with ORCID, committees, videos) use QuantumDB, which covers the same conferences: https://quantumdb.iaqi.org/llms.txt (data under CC0 1.0).
+
+## Structured data (recommended for agents)
+
+- [All conferences, with links to every per-year export](https://quantumdb.iaqi.org/api/v1/export/all.json)
+- One conference as JSON: `https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-<year>`; CSV: append `/talks.csv`, `/posters.csv` or `/committees.csv`
+- [QuantumDB guide for LLMs](https://quantumdb.iaqi.org/llms.txt)
+
+## Archived editions
+
+### QCrypt 2026
+
+2026-08-24 to 2026-08-28; Ottawa, Canada
+
+- [Archived website](https://qcrypt.iaqi.org/2026/)
+- [Schedule](https://qcrypt.iaqi.org/2026/schedule.html)
+- [Accepted papers](https://qcrypt.iaqi.org/2026/technical/accepted-papers/)
+- [Speakers](https://qcrypt.iaqi.org/2026/speakers.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2026), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2026/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2026/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2026/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2026)
+
+### QCrypt 2025
+
+2025-08-26 to 2025-08-29; Sanya, China
+
+- [Archived website](https://qcrypt.iaqi.org/2025/)
+- [Schedule](https://qcrypt.iaqi.org/2025/schedule.html)
+- [Accepted papers](https://qcrypt.iaqi.org/2025/technical/accepted-papers/)
+- [Speakers](https://qcrypt.iaqi.org/2025/speakers.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2025), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2025/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2025/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2025/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2025)
+
+### QCrypt 2024
+
+2024-09-02 to 2024-09-06; Vigo, Spain
+
+- [Archived website](https://qcrypt.iaqi.org/2024/)
+- [Schedule](https://qcrypt.iaqi.org/2024/schedule/)
+- [Accepted Papers](https://qcrypt.iaqi.org/2024/accepted-papers/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2024), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2024/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2024/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2024/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2024)
+
+### QCrypt 2023
+
+2023-08-14 to 2023-08-18; Maryland, United States
+
+- [Archived website](https://qcrypt.iaqi.org/2023/)
+- [Schedule](https://qcrypt.iaqi.org/2023/schedule.html)
+- [Accepted Papers](https://qcrypt.iaqi.org/2023/accepted-papers.html)
+- [Speakers](https://qcrypt.iaqi.org/2023/speakers.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2023), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2023/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2023/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2023/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2023)
+
+### QCrypt 2022
+
+2022-08-29 to 2022-09-02; Taipei, Taiwan
+
+- [Archived website](https://qcrypt.iaqi.org/2022/)
+- [Schedule](https://qcrypt.iaqi.org/2022/schedule/)
+- [Accepted Papers](https://qcrypt.iaqi.org/2022/accepted-papers/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2022), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2022/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2022/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2022/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2022)
+
+### QCrypt 2021
+
+2021-08-23 to 2021-08-27; Amsterdam, Netherlands; online
+
+- [Archived website](https://qcrypt.iaqi.org/2021/)
+- [Schedule](https://qcrypt.iaqi.org/2021/schedule.html)
+- [Program](https://qcrypt.iaqi.org/2021/speakers.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2021), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2021/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2021/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2021/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2021)
+
+### QCrypt 2020
+
+2020-08-10 to 2020-08-14; Amsterdam, Netherlands; online
+
+- [Archived website](https://qcrypt.iaqi.org/2020/)
+- [Schedule](https://qcrypt.iaqi.org/2020/schedule.html)
+- [Accepted Papers](https://qcrypt.iaqi.org/2020/accepted-papers.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2020), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2020/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2020/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2020/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2020)
+
+### QCrypt 2019
+
+2019-08-26 to 2019-08-30; Montreal, Canada
+
+- [Archived website](https://qcrypt.iaqi.org/2019/)
+- [Scientific Program](https://qcrypt.iaqi.org/2019/scientific-program/)
+- [General Schedule](https://qcrypt.iaqi.org/2019/scientific-program/general-schedule/)
+- [Accepted Papers](https://qcrypt.iaqi.org/2019/accepted-papers/)
+- [Call for Papers](https://qcrypt.iaqi.org/2019/call-for-papers/)
+- [Tutorials and Invited Talks](https://qcrypt.iaqi.org/2019/scientific-program/tutorials-and-invited-talks/)
+- [Posters](https://qcrypt.iaqi.org/2019/scientific-program/posters/)
+- [Committees](https://qcrypt.iaqi.org/2019/committees/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2019), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2019/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2019/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2019/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2019)
+
+### QCrypt 2018
+
+2018-08-27 to 2018-08-31; Shanghai, China
+
+- [Archived website](https://qcrypt.iaqi.org/2018/)
+- [Scientific Program](https://qcrypt.iaqi.org/2018/scientific-program/)
+- [Accepted papers](https://qcrypt.iaqi.org/2018/others/accepted-papers/)
+- [Call for papers](https://qcrypt.iaqi.org/2018/call-for-papers/)
+- [Invited Speakers List](https://qcrypt.iaqi.org/2018/invited-talks/)
+- [Committees](https://qcrypt.iaqi.org/2018/committees/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2018), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2018/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2018/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2018/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2018)
+
+### QCrypt 2017
+
+2017-09-18 to 2017-09-22; Cambridge, United Kingdom
+
+- [Archived website](https://qcrypt.iaqi.org/2017/)
+- [Scientific Program](https://qcrypt.iaqi.org/2017/scientific-program/)
+- [Call for papers](https://qcrypt.iaqi.org/2017/call-for-papers/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2017), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2017/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2017/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2017/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2017)
+
+### QCrypt 2016
+
+2016-09-12 to 2016-09-16; Washington, United States
+
+- [Archived website](https://qcrypt.iaqi.org/2016/)
+- [Scientific Program](https://qcrypt.iaqi.org/2016/scientific-program/)
+- [Schedule](https://qcrypt.iaqi.org/2016/schedule/)
+- [Call for Papers](https://qcrypt.iaqi.org/2016/call-for-papers/)
+- [Invited Talks](https://qcrypt.iaqi.org/2016/invited-talks/)
+- [Posters](https://qcrypt.iaqi.org/2016/posters/)
+- [Instructions for Speakers and Poster Presenters](https://qcrypt.iaqi.org/2016/instructions-speakers-poster-presenters/)
+- [Committees](https://qcrypt.iaqi.org/2016/committees/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2016), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2016/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2016/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2016/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2016)
+
+### QCrypt 2015
+
+2015-09-28 to 2015-10-02; Tokyo, Japan
+
+- [Archived website](https://qcrypt.iaqi.org/2015/)
+- [Scientific Program](https://qcrypt.iaqi.org/2015/scientific-program/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2015), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2015/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2015/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2015/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2015)
+
+### QCrypt 2014
+
+2014-09-01 to 2014-09-05; Paris, France
+
+- [Archived website](https://qcrypt.iaqi.org/2014/)
+- [Scientific program](https://qcrypt.iaqi.org/2014/program/)
+- [Posters](https://qcrypt.iaqi.org/2014/posters/)
+- [Committees](https://qcrypt.iaqi.org/2014/committees/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2014), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2014/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2014/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2014/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2014)
+
+### QCrypt 2013
+
+2013-08-05 to 2013-08-10; Waterloo, Canada
+
+- [Archived website](https://qcrypt.iaqi.org/2013/)
+- [Scientific program](https://qcrypt.iaqi.org/2013/program/)
+- [Posters](https://qcrypt.iaqi.org/2013/posters/)
+- [Committees](https://qcrypt.iaqi.org/2013/committees/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2013), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2013/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2013/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2013/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2013)
+
+### QCrypt 2012
+
+2012-09-10 to 2012-09-14; Singapore, Singapore
+
+- [Archived website](https://qcrypt.iaqi.org/2012/)
+- [Scientific Program](https://qcrypt.iaqi.org/2012/program.html)
+- [Committees](https://qcrypt.iaqi.org/2012/committees.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2012), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2012/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2012/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2012/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2012)
+
+### QCrypt 2011
+
+2011-09-12 to 2011-09-16; Zurich, Switzerland
+
+- [Archived website](https://qcrypt.iaqi.org/2011/)
+- [QCRYPT 2011: Scientific Programme](https://qcrypt.iaqi.org/2011/programme.html)
+- [Schedules](https://qcrypt.iaqi.org/2011/aaa_template/education/schedules.html)
+- [Posters](https://qcrypt.iaqi.org/2011/programme/posters/)
+- [QCRYPT 2011: Committees](https://qcrypt.iaqi.org/2011/committees.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2011), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2011/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2011/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/qcrypt-2011/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/qcrypt-2011)
+
+## Rights
+
+Facts about the conferences (titles, authors, dates) are free to use; QuantumDB dedicates its data to the public domain (CC0 1.0). Abstracts, slides, photos and recordings remain the property of their authors.
