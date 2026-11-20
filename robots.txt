@@ -1,0 +1,6 @@
+# Static archive of past conference websites, maintained by IAQI.
+# Crawlers and AI agents are welcome. A map for LLMs: https://qcrypt.iaqi.org/llms.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://qcrypt.iaqi.org/sitemap.xml
